@@ -18,17 +18,17 @@ keyboard = Controller()
 
 print("Quickly head over to your desired choice of playing")
 print('Music will start playing in 5 seconds...')
-time.sleep(5)
+time.sleep(2)
 
 # Change the temp here (in seconds 1 = 1 second, 0.5 = Half a second)
-delay = 0.07
+delay = 0.13
 
 # Mapping for special characters that require Shift
 special_characters = {
     '!': '1', '@': '2', '#': '3', '$': '4', '%': '5',
     '^': '6', '&': '7', '*': '8', '(': '9', ')': '0',
     '_': '-', '+': '=', '{': '[', '}': ']', ':': ';',
-    '"': "'", '<': ',', '>': '.', '?': '/', '|': '\\'
+    '"': "'", '<': ',', '>': '.', '?': '/'
 }
 
 def press_key(note):
