@@ -1,7 +1,7 @@
 AutoPlayer Script Setup Guide
 =============================
 
-This guide will walk you through setting up and running the AutoPlayer script. Follow the steps carefully, even if you're new to coding!
+This guide will walk you through setting up and running the AutoPlayer script. Follow the steps carefully, this guide hopes to give you the best chance at setting this up.
 
 ---
 
