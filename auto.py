@@ -17,7 +17,7 @@ keyboard = Controller()
 
 
 print("Quickly head over to your desired choice of playing")
-print('Music will start playing in 5 seconds...')
+print('Music will start playing in 2 seconds...')
 time.sleep(2)
 
 # Change the temp here (in seconds 1 = 1 second, 0.5 = Half a second)
