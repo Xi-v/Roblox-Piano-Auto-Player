@@ -1,7 +1,7 @@
 # Code originally created by maksimKorzh on Github https://github.com/maksimKorzh
-# Code adjusted by BlazingGlitch007222 on Github https://github.com/Xi-v
+# Code adjusted by Xi-v on Github https://github.com/Xi-v
 #
-# Note from BlazingGlitch007222:
+# Note from Xi-v:
 # Thank you to the original owner for creating the process, I adjusted it so that it could handle
 # special characters and uppercase, so it would work for all scripts.
 # please enjoy, and don't forget to favourite and watch the repo!
@@ -56,26 +56,22 @@ def press_key(note):
 
 with open('sheet.txt') as f:
     notes = f.read()
-
     index = 0
 
     while index in range(len(notes)):
         if notes[index].isalnum() or notes[index] in special_characters:
             press_key(notes[index])
-
             print("pressed key:", notes[index])
-        
+
         else:
             if notes[index] == '|': 
                 time.sleep(delay * 8)
 
             if notes[index] == '[':
                 chord = []
-
                 while notes[index] != ']':
                     if notes[index].isalnum() or notes[index] in special_characters:
                         chord.append(notes[index])
-                    
                     index += 1
 
                 for note in chord:
@@ -84,5 +80,4 @@ with open('sheet.txt') as f:
                 print("pressed keys:", chord)
 
         time.sleep(delay)
-
         index += 1        
